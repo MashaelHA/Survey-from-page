@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<style>
+    body {
+        background-color: #0a5760;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-text{
+        width: 90%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid white;
+        height: 20px;
+    }
+    .form-select {
+        height: 25px;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+    .bnt {
+        width: 80px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 15px;
+    }
+    .container {
+        background-color: #0a7e89;
+        width: 20%;
+        /* height: 250px; */
+        border-radius: 7px;
+        padding: 1%;
+        margin: 40px;
+    }
+    .d-block {
+        margin-bottom: 3px;
+        display: block;
+    }
+</style>
+<body>
+    <div class="container">
+        <form method="get" enctype="multipart/form-data">
+            <h2 style="margin-top: 0;"> Please fill the form</h2>
+
+            <div class="form-group">
+                <label for="name" class="d-block">Your name</label>
+                <input id="name" type="text" placeholder="Enter your username" maxlength="10" required class="form-text">
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="d-block">Your email</label>
+                <input id="email" type="email" placeholder="Enter your email" required class="form-text">
+            </div>
+    
+            <div class="form-group d-block">
+                <label for="phone">Your phone</label>
+                <input type="tel" id="phone" class="form-text">
+            </div>
+    
+            <div class="form-group d-block">
+                <label for="refer">How did you hear about us?</label>
+                <select name="refer" id="refer" required class="form-select ">
+                    <option value="" selected>Select from the following..</option>
+                    <option value="friend" >From a friend</option>
+                    <option value="social" >Social media</option>
+                    <option value="google" >Google dearch</option>
+                    <option value="googlemaps" >Google maps</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="male">Gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="" value="male">
+    
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="" value="female">
+            </div>
+            
+            <div class="form-group">
+                <div>
+                Which product did you use ?
+                </div>
+    
+                <div>
+                    <input id="tea1" type="checkbox" name="product">
+                    <label for="tea1">tea 1</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <input id="tea2" type="checkbox" name="product">
+                <label for="tea1">tea 2</label>
+            </div>
+    
+            <div class="form-group">
+                <input id="tea3" type="checkbox" name="product">
+                <label for="tea3">tea 3</label>
+            </div>
+    
+            <div class="form-group d-block">
+                <label for="date">When did you get the product</label>
+                <input type="date" id="date" class="form-text">
+            </div>
+    
+            <div class="form-group">
+                <label for="image">Product photo</label>
+                <input type="file" multiple id="image">
+                <!-- <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvKwjhny-NyioFWp8NNdPI5kalvJq4e3bWw&usqp=CAU" height="15"> -->
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" class="bnt" style="background-color: rgb(102, 186, 102); color: #0a7e89;">send</button>
+                <input type="reset" value="clear" class="bnt" style="background-color: rgba(255, 166, 0, 0.686);">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
